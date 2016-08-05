@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.msi.geoquiz">
+    package="com.example.lenovo.luckyge">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".activity.SplashActivity"
+            android:screenOrientation= "portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,13 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".welcomeView"
-            android:theme="@android:style/Theme.NoTitleBar" />
-        <activity android:name=".IntroActivity" />
-        <activity android:name=".ServiActivity" />
-        <activity android:name=".BuildActivity" />
-        <activity android:name=".AdvantActivity" />
-        <activity android:name=".ComtureActivity" />
+            android:name=".activity.MainView"
+            android:screenOrientation= "portrait"
+            android:label="@string/title_activity_main_view"></activity>
     </application>
 
 </manifest>

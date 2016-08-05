@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_a31834924309460b1243e01f56f630d93a464d3e\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="be3da4aa571bcc58e6a06d03a3665af2c82291ad">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cba999c01ec16b5cd3a78199b1dbdff1a572acab\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_b6265d09ddf32c76af558f0a40d94e6aaff474dc\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.1_0dec6483e9b7676fb3971e30cdc53afcb72bbeb5\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="5b44324df7dcb51f8a64a3d35f86bba0084ecbe7">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_dc3fdd3d30045f9c30baf111d22f1b027df9abca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\MSI\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_e5cf7871ec45be2f7928722de3af2dc3b3d5c4d1\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.1_d5aef16de573771537411ada2f1a71bee7f214bb\classes.dex" />
+    </item>
+    <item
+        jar="D:\android\workhome\LuckyGE\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="D:\android\workhome\LuckyGE\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_c398afe30f9b7d1d9470080af3a38b79fff5f572\classes.dex" />
+    </item>
+
+</items>
