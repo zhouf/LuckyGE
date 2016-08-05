@@ -1,14 +1,60 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.CoSysFragment">
+    tools:context=".fragment.CoSysFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/radiobutton_cs"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/scrollView" >
 
-</RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/cosys"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:lineSpacingExtra="5dp"
+                android:id="@+id/systext" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="业务范围"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:id="@+id/bussiness" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sphob"
+                android:textSize="15dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:lineSpacingExtra="5dp"
+
+
+                android:id="@+id/sphere" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
