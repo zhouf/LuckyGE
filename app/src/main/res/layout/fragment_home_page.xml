@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomePageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.77"
+        android:weightSum="1"
+        android:background="@drawable/btnbk">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_weight="0.16">
+            <!--                android:text="企业文化"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_weight="0.19"
+
+                android:id="@+id/cocul"
+                android:background="@mipmap/cocul"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+            <!--      android:text="导游风采"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_weight="0.19"
+
+                android:id="@+id/trguide"
+                android:background="@mipmap/trguide"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_weight="0.60">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+            <!--                android:text="泰国风情"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+
+                android:layout_weight="0.33"
+                android:id="@+id/thaiscene"
+                android:background="@mipmap/thaiscene"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:weightSum="1">
+            <!--                android:text="旅游路线"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="109dp"
+
+                android:id="@+id/trroute"
+                android:background="@mipmap/trroute"
+                android:layout_weight="0.28" />
+            <!--                android:text="关于我们"-->
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="121dp"
+
+                android:id="@+id/aboutus"
+                android:background="@mipmap/aboutus"
+                android:layout_weight="0.28" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
