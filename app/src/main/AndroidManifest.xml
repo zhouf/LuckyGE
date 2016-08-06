@@ -3,12 +3,15 @@
     package="com.example.lenovo.luckyge">
 
     <application
+
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".activity.SplashActivity">
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".activity.SplashActivity"
+            android:screenOrientation= "portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,6 +20,7 @@
         </activity>
         <activity
             android:name=".activity.MainView"
+            android:screenOrientation= "portrait"
             android:label="@string/title_activity_main_view"></activity>
     </application>
 
