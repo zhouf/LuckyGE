@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.example.lenovo.luckyge.show.SlideShowView"  >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.lenovo.luckyge.show.SlideShowView
+                android:id="@+id/slideshowView"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.2"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:lineSpacingExtra="5dp"
+                android:textSize="15dp"
+                android:text="@string/comculone"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:padding="20dp"
+                android:text="@string/comcultwo"
+                android:lineSpacingExtra="5dp"
+                android:textSize="15dp"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/culone"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/comculth"
+                android:textSize="15dp"
+                android:lineSpacingExtra="5dp"
+                android:padding="20dp"
+                android:id="@+id/textView3"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

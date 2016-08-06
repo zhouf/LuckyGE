@@ -9,7 +9,8 @@
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/scrollView" >
+        android:id="@+id/scrollView"
+        >
 
         <LinearLayout
             android:orientation="vertical"
@@ -18,8 +19,12 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:id="@+id/imageView3" />
+                android:layout_height="150dp"
+                android:id="@+id/imageView3"
+                android:src="@drawable/combuild"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="5dp"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -27,33 +32,11 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/cosys"
                 android:gravity="center"
-                android:padding="10dp"
                 android:textSize="15dp"
                 android:lineSpacingExtra="5dp"
+                android:padding="25dp"
                 android:id="@+id/systext" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="业务范围"
-                android:textSize="18dp"
-                android:padding="8dp"
-                android:gravity="center"
-                android:id="@+id/bussiness" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/sphob"
-                android:textSize="15dp"
-                android:paddingRight="20dp"
-                android:paddingLeft="20dp"
-                android:lineSpacingExtra="5dp"
-
-
-                android:id="@+id/sphere" />
         </LinearLayout>
     </ScrollView>
 
