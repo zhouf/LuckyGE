@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="white">#FFFFFF</color>
-    <color name="orange">#f5af73</color>
+    <color name="orange">#FF9000</color>
     <color name="gray">#ABABAB</color>
+    <color name="pagegreen">#89bfc9</color>
+    <color name="pageorange">#f0a758</color>
+    <color name="bule">#0090e9</color>
 </resources>

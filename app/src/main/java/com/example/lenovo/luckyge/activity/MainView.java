@@ -11,7 +11,6 @@ import com.example.lenovo.luckyge.R;
 import com.example.lenovo.luckyge.adapter.myFragmentPagerAdapter;
 import com.example.lenovo.luckyge.fragment.CoAdvFragment;
 import com.example.lenovo.luckyge.fragment.CoInfoFragment;
-import com.example.lenovo.luckyge.fragment.CoSysFragment;
 import com.example.lenovo.luckyge.fragment.HomePageFragment;
 import com.example.lenovo.luckyge.fragment.SerIdeaFragment;
 
@@ -22,7 +21,7 @@ import java.util.ArrayList;
 public class MainView extends FragmentActivity{
     private ViewPager mPager;
     private RadioGroup mGroup;
-    private RadioButton rbHP,rbSI,rbCI,rbCS,rbCA;
+    private RadioButton rbHP,rbSI,rbCI,rbCA;
     private ArrayList<Fragment> fragmentList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,6 @@ public class MainView extends FragmentActivity{
         rbHP=(RadioButton)findViewById(R.id.rb_hp);
         rbSI=(RadioButton)findViewById(R.id.rb_si);
         rbCI=(RadioButton)findViewById(R.id.rb_ci);
-        rbCS=(RadioButton)findViewById(R.id.rb_cs);
         rbCA=(RadioButton)findViewById(R.id.rb_ca);
         //RadioGroup选中状态改变监听
         mGroup.setOnCheckedChangeListener(new myCheckChangeListener());
@@ -50,13 +48,11 @@ public class MainView extends FragmentActivity{
         HomePageFragment hpFragment=new HomePageFragment();
         CoInfoFragment ciFragment=new CoInfoFragment();
         SerIdeaFragment siFragment=new SerIdeaFragment();
-        CoSysFragment csFragment=new CoSysFragment();
         CoAdvFragment caFragment=new CoAdvFragment();
         fragmentList=new ArrayList<Fragment>();
         fragmentList.add(hpFragment);
         fragmentList.add(ciFragment);
-        fragmentList.add(siFragment);
-        fragmentList.add(csFragment);
+        fragmentList.add(siFragment);;
         fragmentList.add(caFragment);
         //ViewPager设置适配器
         mPager.setAdapter(new myFragmentPagerAdapter(getSupportFragmentManager(), fragmentList));
@@ -84,11 +80,8 @@ public class MainView extends FragmentActivity{
                 case R.id.rb_si:
                     mPager.setCurrentItem(2,false);
                     break;
-                case R.id.rb_cs:
-                    mPager.setCurrentItem(3,false);
-                    break;
                 case R.id.rb_ca:
-                    mPager.setCurrentItem(4,false);
+                    mPager.setCurrentItem(3,false);
             }
         }
     }
@@ -116,9 +109,6 @@ public class MainView extends FragmentActivity{
                     mGroup.check(R.id.rb_si);
                     break;
                 case 3:
-                    mGroup.check(R.id.rb_cs);
-                    break;
-                case 4:
                     mGroup.check(R.id.rb_ca);
             }
         }

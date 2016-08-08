@@ -41,13 +41,6 @@
             android:text="@string/radiobutton_si"
             style="@style/style_RadioButton"/>
         <RadioButton
-            android:id="@+id/rb_cs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/rb_cs_selector"
-            android:text="@string/radiobutton_cs"
-            style="@style/style_RadioButton"/>
-        <RadioButton
             android:id="@+id/rb_ca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

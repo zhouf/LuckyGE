@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.luckyge.activity.ThaiPatActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollViewbkk"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imgViewPat"
+                android:src="@drawable/pat"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sumpat"
+                android:textSize="15dp"
+                android:lineSpacingExtra="5dp"
+                android:padding="25dp"
+                android:id="@+id/pattext" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/beach"
+                android:textSize="15dp"
+                android:lineSpacingExtra="5dp"
+                android:padding="25dp"
+                android:id="@+id/patdetailtext" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/imgViewPatLB"
+                android:src="@drawable/ladyboy"
+                android:scaleType="fitXY" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/lby"
+                android:textSize="15dp"
+                android:lineSpacingExtra="5dp"
+                android:padding="25dp"
+                android:id="@+id/patlbytext" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

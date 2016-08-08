@@ -1,6 +1,4 @@
 package com.example.lenovo.luckyge.show;
-
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
@@ -37,7 +35,7 @@ public class SlideShowView extends FrameLayout {
 
     //轮播图图片数量
     private final static int IMAGE_COUNT = 5;
-    //自动轮播的时间间隔
+    //自动轮播的时间间隔秒
     private final static int TIME_INTERVAL = 10;
     //自动轮播启用开关
     private final static boolean isAutoPlay = true;
@@ -94,7 +92,7 @@ public class SlideShowView extends FrameLayout {
      */
     private void startPlay(){
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
-        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(), 1, 4, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleAtFixedRate(new SlideShowTask(),1, TIME_INTERVAL, TimeUnit.SECONDS);
     }
     /**
      * 停止轮播图切换
@@ -239,9 +237,9 @@ public class SlideShowView extends FrameLayout {
             currentItem = pos;
             for(int i=0;i < dotViewsList.size();i++){
                 if(i == pos){
-                    ((View)dotViewsList.get(pos)).setBackgroundResource(R.drawable.dianhong);
+                    ((View)dotViewsList.get(pos)).setBackgroundResource(R.drawable.dianbai);
                 }else {
-                    ((View)dotViewsList.get(i)).setBackgroundResource(R.drawable.dianbai);
+                    ((View)dotViewsList.get(i)).setBackgroundResource(R.drawable.dianhui);
                 }
             }
         }

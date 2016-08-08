@@ -5,168 +5,74 @@
     tools:context=".fragment.HomePageFragment">
 
     <!-- TODO: Update blank fragment layout -->
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="165dp"
-
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout"
-        android:background="@drawable/mainbk">
-    </LinearLayout>
 <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="185dp"
-
-        android:orientation="horizontal" >
-
-
-        <!--     android:text="照片"-->
-        <Button
-            android:id="@+id/select_picture1"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:drawableTop="@mipmap/ic_trguide"
-            android:text="导游风采"
-            android:textColor="#000000"
-            android:textSize="19sp" />
-
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="3dp"
-            android:background="#8c8c8c" />
-        <!--            android:text="拍照"-->
-        <Button
-            android:id="@+id/take_photo2"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:drawableTop="@mipmap/ic_thaiscene"
-            android:text="泰国风情"
-            android:textColor="#000000"
-            android:textSize="19sp" />
-
-    </LinearLayout>
-<!--
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="300dp">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#8c8c8c"
-            />
-    </LinearLayout>-->
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_mainbanner" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="325dp"
-
-        android:orientation="horizontal" >
-
-        <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="3dp"
-            android:background="#8c8c8c" />
-        <!--     android:text="照片"-->
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <Button
-            android:id="@+id/select_picture3"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:drawableTop="@mipmap/ic_cocul"
-            android:text="企业文化"
-            android:textColor="#000000"
-            android:textSize="19sp" />
-
-        <View
-            android:layout_width="1dp"
+            android:id="@+id/cocul"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="3dp"
-            android:background="#8c8c8c" />
-        <!--            android:text="拍照"-->
-
-
+            android:layout_weight="1"
+            android:background="@mipmap/ic_cocul"/>
+        <Button
+            android:id="@+id/trguide"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_trguide"/>
     </LinearLayout>
 
-    <!--  android:background="@drawable/share_vp_back"-->
-   <!--<LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="425dp">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#8c8c8c"
-            />
-    </LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="440dp"
+        android:orientation="horizontal"
+        android:layout_weight="2">
 
-        android:orientation="horizontal" >
+            <Button
+                android:id="@+id/thaiscene"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_thaistyle"/>
 
 
-        <!--     android:text="照片"-->
-        <Button
-            android:id="@+id/select_picture4"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:drawableTop="@mipmap/ic_file"
-            android:text="旅游路线"
-            android:textColor="#000000"
-            android:textSize="19sp" />
-
-        <View
-            android:layout_width="1dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginBottom="2dp"
-            android:layout_marginTop="3dp"
-            android:background="#8c8c8c" />
-        <!--            android:text="拍照"-->
-        <Button
-            android:id="@+id/take_photo5"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
             android:layout_weight="1"
-            android:background="@null"
-            android:drawableTop="@mipmap/ic_aboutus"
-            android:text="关于我们"
-            android:textColor="#000000"
-            android:textSize="19sp" />
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_file"/>
+            <Button
+                android:id="@+id/aboutus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_aboutus"/>
+        </LinearLayout>
+    </LinearLayout>
 
 
-    </LinearLayout>
-  <!--  <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="560dp">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#8c8c8c"
-            />
-    </LinearLayout>
--->
+
+
+</LinearLayout>
+
+
+
 </FrameLayout>

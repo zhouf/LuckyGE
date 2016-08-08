@@ -9,10 +9,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.lenovo.luckyge.R;
+import com.example.lenovo.luckyge.activity.AboutActivity;
 import com.example.lenovo.luckyge.activity.Comculture;
+import com.example.lenovo.luckyge.activity.ThaiSceneActivity;
+import com.example.lenovo.luckyge.activity.WebGuidesActivity;
+import com.example.lenovo.luckyge.activity.WebLinesActivity;
 
 
 /**
@@ -38,14 +41,35 @@ public class HomePageFragment extends Fragment implements View.OnClickListener {
         super.onActivityCreated(savedInstanceState);
         Button cocul = (Button) getView().findViewById(R.id.cocul);
         cocul.setOnClickListener(this);
-
+        Button trguide = (Button) getView().findViewById(R.id.trguide);
+        trguide.setOnClickListener(this);
+        Button thaiscene = (Button) getView().findViewById(R.id.thaiscene);
+        thaiscene.setOnClickListener(this);
+        Button file = (Button) getView().findViewById(R.id.file);
+        file.setOnClickListener(this);
+        Button aboutus = (Button) getView().findViewById(R.id.aboutus);
+        aboutus.setOnClickListener(this);
     }
 
     @Override
-    public void onClick(View view) {
+    public void onClick(View btn) {
 //      Toast.makeText(getActivity(), "Clicked", Toast.LENGTH_LONG).show();
         Log.i("frgment skip","I will skip to page two");
+        if(btn.getId()==R.id.cocul){
         Intent intent =new Intent(getActivity(),Comculture.class);
-        startActivity(intent);
+        startActivity(intent);}
+        else if(btn.getId()==R.id.trguide){
+            Intent intent =new Intent(getActivity(),WebGuidesActivity.class);
+            startActivity(intent);
+        }else if(btn.getId()==R.id.thaiscene){
+            Intent intent =new Intent(getActivity(),ThaiSceneActivity.class);
+            startActivity(intent);
+        }else if(btn.getId()==R.id.file){
+            Intent intent =new Intent(getActivity(),WebLinesActivity.class);
+            startActivity(intent);
+        }else if(btn.getId()==R.id.aboutus){
+            Intent intent =new Intent(getActivity(),AboutActivity.class);
+           startActivity(intent);
+        }
     }
 }
