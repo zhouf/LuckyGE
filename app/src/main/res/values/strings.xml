@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LuckyGE</string>
+    <string name="app_name">LuckyGuy</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
@@ -100,6 +100,8 @@
         负责招徕、接待港、澳、台同胞及全国各地游客来泰国旅游观光，考察、代办车、船、机票等业务，
         同时可为大型国际、国内会议提供接待及旅游服务。</string>
     <string name="tel">TEL:(66)2-6454025/26/27\n
+中国市场负责人：田亮\n
+(66)800888296/(86)13811126593\n
 FAX:(66)2-02-5385944</string>
     <string name="address">Add:1729 Soi Ladprao 94 (Panjamit) SrivaraRd., Plubpla,Wang Tong lang</string>
     <string name="title_activity_maps">Map</string>

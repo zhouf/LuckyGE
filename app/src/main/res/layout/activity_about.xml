@@ -108,7 +108,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/tel"
                 android:textSize="15dp"
-                android:lineSpacingExtra="5dp"
+                android:lineSpacingExtra="2dp"
                 android:textColor="@color/white"
                 android:id="@+id/telphone" />
 
@@ -129,7 +129,7 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="@string/address"
                 android:textSize="16dp"
-                android:paddingTop="5dp"
+                android:paddingTop="2dp"
                 android:textColor="@color/white"
                 android:id="@+id/adres" />
         </LinearLayout>

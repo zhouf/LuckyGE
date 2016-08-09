@@ -58,7 +58,8 @@
         <activity
             android:name=".activity.ThaiPatActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -73,7 +74,8 @@
 
         <activity
             android:name=".activity.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
