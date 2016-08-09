@@ -14,15 +14,15 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="1">
+            android:weightSum="1"
+            android:id="@+id/bkklayout">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:id="@+id/imgViewBkk"
             android:src="@drawable/bkk"
-            android:scaleType="fitXY"
-            android:paddingTop="5dp" />
+            android:scaleType="fitXY" />
             <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

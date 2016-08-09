@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/tsllayout"
     tools:context="com.example.lenovo.luckyge.activity.ThaiSceneActivity"
     android:orientation="vertical"
     android:paddingBottom="20dp">
@@ -15,11 +16,14 @@
         android:src="@drawable/thaiscene"
         android:scaleType="fitXY"
         android:layout_weight="1.5" />
+    
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:id="@+id/tsllayout1">
+
     <Button
         android:id="@+id/btn_bkk"
         android:layout_width="match_parent"
@@ -46,7 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_weight="2">
+        android:layout_weight="2"
+        android:id="@+id/tsllayout2">
     <Button
         android:id="@+id/btn_hkt"
         android:layout_width="match_parent"

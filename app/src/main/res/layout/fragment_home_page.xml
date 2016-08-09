@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomePageFragment">
+    tools:context=".fragment.HomePageFragment"
+    android:id="@+id/hpflayout">
 
     <!-- TODO: Update blank fragment layout -->
 <LinearLayout

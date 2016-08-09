@@ -55,6 +55,7 @@
                 android:text="集团发展"
                 android:gravity="center"
                 android:textSize="18dp"
+                android:paddingTop="20dp"
                 android:id="@+id/cominro" />
 
             <TextView
