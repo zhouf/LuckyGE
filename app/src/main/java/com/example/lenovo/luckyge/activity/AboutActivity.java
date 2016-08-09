@@ -9,9 +9,11 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.lenovo.luckyge.R;
 import com.example.lenovo.luckyge.fragment.HomePageFragment;
+import com.google.android.gms.common.GoogleApiAvailability;
 
 import java.util.Map;
 
@@ -50,8 +52,16 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         if (v.getId()==R.id.adres){
-            Intent intent = new Intent(AboutActivity.this, MapsActivity.class);
-            startActivity(intent);
+            int isGooglePlayAvailable = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(AboutActivity.this);
+            Log.i("isGoogle","isGooglePlayAvailable:" + isGooglePlayAvailable);
+            if(isGooglePlayAvailable==0){
+                //OK
+                Intent intent = new Intent(AboutActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }else{
+                //without google play
+                Toast.makeText(this,"需要安装GooglePlay才能查看地图",Toast.LENGTH_LONG).show();
+            }
         }
     }
 
