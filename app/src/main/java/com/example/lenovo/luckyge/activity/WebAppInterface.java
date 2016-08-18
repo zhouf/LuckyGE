@@ -1,6 +1,8 @@
 package com.example.lenovo.luckyge.activity;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.webkit.JavascriptInterface;
 import android.widget.Toast;
 
@@ -18,5 +20,12 @@ public class WebAppInterface {
     @JavascriptInterface
     public void showToast(String toast) {
         Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show();
+    }
+
+    @JavascriptInterface
+    public void callPhone(String phone){
+        //Toast.makeText(mContext, phone, Toast.LENGTH_SHORT).show();
+        Intent callIntent = new Intent("android.intent.action.CALL", Uri.parse("tel:" + phone));
+        mContext.startActivity(callIntent);
     }
 }
