@@ -1,5 +1,4 @@
 package com.example.lenovo.luckyge.activity;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -7,17 +6,10 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.lenovo.luckyge.R;
-import com.example.lenovo.luckyge.fragment.HomePageFragment;
-import com.google.android.gms.common.GoogleApiAvailability;
 
-import java.util.Map;
-
-public class AboutActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener {
+public class AboutActivity extends AppCompatActivity implements View.OnTouchListener {
 
     //手指向右滑动时的最小速度
     private static final int XSPEED_MIN = 200;
@@ -39,30 +31,11 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        TextView address = (TextView)findViewById(R.id.adres);
-        address.setOnClickListener(this);
-
         LinearLayout moverlayout = (LinearLayout) findViewById(R.id.moverlayout);
         Log.i("ll","ll=" + moverlayout);
         moverlayout.setOnTouchListener(this);
 
 
-    }
-
-    @Override
-    public void onClick(View v) {
-        if (v.getId()==R.id.adres){
-            int isGooglePlayAvailable = GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(AboutActivity.this);
-            Log.i("isGoogle","isGooglePlayAvailable:" + isGooglePlayAvailable);
-            if(isGooglePlayAvailable==0){
-                //OK
-                Intent intent = new Intent(AboutActivity.this, MapsActivity.class);
-                startActivity(intent);
-            }else{
-                //without google play
-                Toast.makeText(this,"需要安装GooglePlay才能查看地图",Toast.LENGTH_LONG).show();
-            }
-        }
     }
 
     @Override
